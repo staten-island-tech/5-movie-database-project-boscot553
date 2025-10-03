@@ -14,14 +14,8 @@ y = data[num]["year"]
 year = input("Movies after this year  ")
 year = str(year)
 y = str(y)
-for i in range(14117):
-    if y < year:
-        num += 1
-    elif y == year:
-        num += 1
-    elif y > year:
-        thing = data[num]["title"]
-        print(thing)
-        num += 1
-        
+print(y)
+#for i in range(14117):
+    
+    
 
