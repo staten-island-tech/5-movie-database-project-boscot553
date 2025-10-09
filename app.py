@@ -85,13 +85,63 @@ data = json.load(movies)
 #     else:
 #         num += 1
 
+
 def honi(x):
-    print(x[0])
-   
-honi("honi")
+    num = 0
+    HONIS = 0
+    for char in x:
+        for char in x:
+            if x[num] == "H":
+                break
+            else:
+                num += 1
+        for char in x:
+            if x[num] == "O":
+                break
+            else:
+                num += 1   
+        for char in x:
+             if x[num] == "N":
+                break
+             else:
+                num += 1           
+        for char in x:
+            if x[num] == "I":
+                HONIS += 1
+                break
+            else:
+                num += 1           
+    print(HONIS)
+    
+honi("HONIS")
+
+
+
         
 
 
 
 
-
+# def honi(x):
+#     num = 0
+#     y = x[0]
+#     for char in x:
+#         y = x[num]
+#         num += 1
+#         if y == "H":
+#             for char in len(x) - num:
+#                 y = x[num]
+#                 num += 1
+#                 if y == "O":
+#                     for char in x - num:
+#                         y = x[num]
+#                         num += 1
+#                         if y =="N":
+#                             for char in x - num:
+#                                 y = x[num]
+#                                 num += 1
+#                                 if y =="I":
+#                                     for char in x - num:
+#                                         y = x[num]
+#                                         num += 1
+#                                         HONIS += 1
