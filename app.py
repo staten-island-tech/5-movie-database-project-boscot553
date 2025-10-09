@@ -76,16 +76,20 @@ data = json.load(movies)
 #     else:
 #         num += 1
 
+# def genre()
+# num = 0
+# for i in range(14117):
+#     if genre == data[num]["genres"]:
+#         print(data[num]["title"])
+#         num += 1
+#     else:
+#         num += 1
 
-genre = input("Search for a movie genre  ")
-num = 0
-for i in range(14117):
-    if genre == data[num]["genres"]:
-        print(data[num]["title"])
-        num += 1
-    else:
-        num += 1
-
+def honi(x):
+    print(x[0])
+   
+honi("honi")
+        
 
 
 
