@@ -77,25 +77,40 @@ data = json.load(movies)
 #         num += 1
 
 
+x = input("Genre  ")
 num = 0
-genre = input("What genre?  ")
 for i in range(14117):
-    if genre == data[num]["genres"][0]:
-        print(data[num]["title"])
-        num += 1
-    elif genre == data[num]["genres"][1]:
-        print(data[num]["title"])
-        num += 1
-    elif genre == data[num]["genres"][2]:
-        print(data[num]["title"])
-        num += 1
-    elif genre == data[num]["genres"][3]:
-        print(data[num]["title"])
-        num += 1
-    elif genre == data[num]["genres"][4]:
-        print(data[num]["title"])
-        num += 1
-    else:
-        num += 1
-
-
+    y = data[num]["genres"]
+    z = len(y)
+    if z == 1:
+        if x == y[0]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
+    if z == 2:
+        if x == y[0] or x == y[1]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
+    if z == 3:
+        if x == y[0] or x == y[1] or x == y[2]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
+    if z == 4:
+        if x == y[0] or x == y[1] or x == y[2] or x == y[3]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
+    if z == 5:
+        if x == y[0] or x == y[1] or x == y[2] or x == y[3] or x == y[4]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
+        
+        
