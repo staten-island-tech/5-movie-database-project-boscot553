@@ -112,5 +112,11 @@ for i in range(14117):
             num += 1
         else:
             num += 1
+    if z == 6:
+        if x == y[0] or x == y[1] or x == y[2] or x == y[3] or x == y[4] or x == y[5]:
+            print(data[num]["title"])
+            num += 1
+        else:
+            num += 1
         
         
