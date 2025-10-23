@@ -65,29 +65,34 @@
 
 
 def slots(q, x, y, z):
+    slot1 = x
+    slot2 = y
+    slot3 = z
+    quarters = q
     plays = 0
-    while q > 0:
-        if x < 35 and q > 0:
-            x += 1
+    while quarters > 0:
+        if slot1 < 35 and quarters > 0:
+            slot1 += 1
             plays += 1
-            q -= 1
-        else:
-            q += 30
-            x -= 35
-        if y < 100 and q > 0:
-            y += 1
+            quarters -= 1
+        elif slot1 == 35:
+            quarters += 30
+            slot1 = 0
+        if slot2 < 100 and quarters > 0:
+            slot2 += 1
             plays += 1
-            q -= 1
-        else:
-            q += 60
-            y -= 100
-        if z < 10 and q > 0:
-            z += 1
+            quarters -= 1
+        elif slot2 == 100:
+            quarters += 60
+            slot2 = 0
+        if slot3 < 10 and quarters > 0:
+            slot3 += 1
             plays += 1
-            q -= 1
-        else:
-            q += 9
-            z -= 10
+            quarters -= 1
+        elif slot3 == 10:
+            quarters += 9
+            slot3 = 0
     print(f"Martha plays {plays} times before going broke")
 
 slots(77, 4, 9, 3)
+
