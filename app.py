@@ -96,32 +96,15 @@
 
 # slots(77, 4, 9, 3)
 
-
-
+plays = 0
 def slots(q, x, y, z):
     plays = 0
     while q > 0:
-        if x == 35:
-            q += 30
-            x = 0
-        elif x < 35 and q > 0:
-            plays += 1
+        if x < 34:
             q -= 1
             x += 1
-        if y == 100:
-            q += 60
-            y = 0
-        elif y < 100 and q > 0:
             plays += 1
-            q -= 1
-            y += 1
-        if z == 10:
-            q += 30
-            z = 0
-        elif z < 10 and q > 0:
-            plays += 1
-            q -= 1
-            z += 1
-    print(f"Martha plays {plays} times before going broke")
-
-slots(77, 4, 9, 3)
+        elif x == 34:
+            q += 29
+            x = 0
+            
